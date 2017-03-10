@@ -1,10 +1,12 @@
 import sys
 import os
-import time
 
 import numpy as np
 
-__doc__="""taken from https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py"""
+__doc__ = """
+    taken from https://github.com/Lasagne/Lasagne/blob/master/examples/mnist.py
+"""
+
 
 def load_dataset():
     # We first define a download function, supporting both Python 2 and 3.
@@ -57,7 +59,3 @@ def load_dataset():
     # We just return all the arrays in order, as expected in main().
     # (It doesn't matter how we do this as long as we can read them again.)
     return X_train, y_train, X_val, y_val, X_test, y_test
-
-
-
-
